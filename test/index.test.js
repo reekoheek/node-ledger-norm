@@ -4,7 +4,7 @@ const { Manager } = require('node-norm');
 const assert = require('assert');
 const Memory = require('node-norm/adapters/memory');
 
-describe.only('ledger', () => {
+describe('ledger', () => {
   it('populate', async () => {
     let manager = new Manager(testConfig());
     let adapter = new Adapter({ manager });
